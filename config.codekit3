@@ -64,6 +64,22 @@
       "oAP" : "\/dev\/content\/_img1.html",
       "oF" : 0
     },
+    "\/dev\/content\/head.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/head.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/scripts.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/scripts.html",
+      "oF" : 0
+    },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
