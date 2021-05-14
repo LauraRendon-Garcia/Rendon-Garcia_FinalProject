@@ -425,6 +425,19 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
+    },
+    "\/sketchimagesproject\/hero.png" : {
+      "ft" : 32768,
+      "iS" : 1654110,
+      "oA" : 0,
+      "oAP" : "\/sketchimagesproject\/hero.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     }
   },
   "hooks" : [
