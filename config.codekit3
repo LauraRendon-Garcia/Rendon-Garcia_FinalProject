@@ -29,6 +29,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/image2.png" : {
+      "ft" : 32768,
+      "iS" : 1284135,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/image2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -47,6 +60,19 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/deploy\/sketchimagesproject\/carhero.png" : {
+      "ft" : 32768,
+      "iS" : 482333,
+      "oA" : 0,
+      "oAP" : "\/deploy\/sketchimagesproject\/carhero.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/dev\/content\/_backtotop.kit" : {
       "cB" : 0,
@@ -116,14 +142,6 @@
       "oAP" : "\/dev\/content\/_img1.html",
       "oF" : 0
     },
-    "\/dev\/content\/_img2.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_img2.html",
-      "oF" : 0
-    },
     "\/dev\/content\/_img3.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -178,14 +196,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/_textcircle.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/head.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/head.html",
       "oF" : 0
     },
     "\/dev\/content\/scripts.kit" : {
@@ -425,19 +435,6 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
-    },
-    "\/sketchimagesproject\/hero.png" : {
-      "ft" : 32768,
-      "iS" : 1654110,
-      "oA" : 0,
-      "oAP" : "\/sketchimagesproject\/hero.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
     }
   },
   "hooks" : [
