@@ -390,7 +390,20 @@ p {
   font-weight: 300;
 }
 
+.header {
+  grid-area: header;
+}
+
+.hero {
+  grid-area: hero;
+}
+.hero img {
+  width: 100%;
+}
+
 .History {
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-area: hist;
+  grid-template-columns: 400%;
+  align-content: center;
 }

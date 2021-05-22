@@ -1,6 +1,21 @@
+
+.header {
+	grid-area: header;
+}
+
+.hero {
+	grid-area: hero;
+	img {
+		width: 100%
+	}
+	
+
+}
 .History {
-    display: grid;
-    grid-template-columns: 100px auto ;
+	display: grid; 
+	grid-area: hist;
+	grid-template-columns: 400% ;
+	align-content: center;
 
-
+			  
 }
