@@ -6,11 +6,34 @@ figure {
 	padding: 0;
 }
 
+
 ul {
 	margin: 0;
 	padding: 0;
 
+	
+
 	li {
 		list-style: none;
 	}
+
+
+}
+main {
+	display:grid;
+	grid-template-areas: 
+		"header"
+		"hero"
+		"sectionpreview"
+		"locationgrid"
+		"textcircle"
+		"testimonials"
+
+
+
+}
+.History {
+	display: grid;
+	grid-template-columns: 100px auto ;
+			  
 }

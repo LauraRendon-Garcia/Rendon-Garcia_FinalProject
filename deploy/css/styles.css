@@ -365,6 +365,16 @@ ul li {
   list-style: none;
 }
 
+main {
+  display: grid;
+  grid-template-areas: "header" "hero" "sectionpreview" "locationgrid" "textcircle" "testimonials";
+}
+
+.History {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+
 /* =============
     Typography
 ============= */
@@ -383,4 +393,9 @@ p {
 
 .section-title {
   font-weight: 300;
+}
+
+.History {
+  display: grid;
+  grid-template-columns: 100px auto;
 }
