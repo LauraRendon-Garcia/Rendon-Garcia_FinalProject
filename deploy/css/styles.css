@@ -367,7 +367,7 @@ ul li {
 
 main {
   display: grid;
-  grid-template-areas: "header" "hero" "hero-2" "sectionpreview" "locationgrid" "textcircle" "testimonials";
+  grid-template-areas: "header" "hero" "sectionpreview" "locationgrid" "textcircle" "testimonials";
 }
 
 /* =============
@@ -390,41 +390,20 @@ p {
   font-weight: 300;
 }
 
-.sectionpreview {
+.header {
+  grid-area: header;
+}
+
+.hero {
+  grid-area: hero;
+}
+.hero img {
+  width: 100%;
+}
+
+.History {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(8, auto);
-  grid-template-areas: "hist about" "hist about" "culture about2" "culture about2" "Food about3" "Food about3" "Visit about4" "Visit about4";
-}
-.sectionpreview #hist {
   grid-area: hist;
-  background: blue;
-}
-.sectionpreview #about {
-  grid-area: about;
-  background: green;
-}
-.sectionpreview #Culture {
-  grid-area: culture;
-  background: pink;
-}
-.sectionpreview #About2 {
-  grid-area: about2;
-  background: purple;
-}
-.sectionpreview #Food {
-  grid-area: Food;
-  background: orange;
-}
-.sectionpreview #About3 {
-  grid-area: about3;
-  background: pink;
-}
-.sectionpreview #Visit {
-  grid-area: visit;
-  background: red;
-}
-.sectionpreview #about4 {
-  grid-area: about4;
-  background: green;
+  grid-template-columns: 400%;
+  align-content: center;
 }

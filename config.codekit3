@@ -545,14 +545,6 @@
       "oAP" : "\/dev\/content\/_diagonal1.html",
       "oF" : 0
     },
-    "\/dev\/content\/_diagonal2.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_diagonal2.html",
-      "oF" : 0
-    },
     "\/dev\/content\/_footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -575,38 +567,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/_hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/_img1.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_img1.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/_img3.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_img3.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/_img4.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_img4.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/_img5.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/_img5.html",
       "oF" : 0
     },
     "\/dev\/content\/_locationgrid.kit" : {
@@ -726,6 +686,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/base\/content\/_sectionpreview.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/base\/content\/_sectionpreview.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/components\/_buttons.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -763,32 +737,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/components\/_navigation.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/content\/_header.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_header-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/content\/_sectionpreview.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_sectionpreview.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
