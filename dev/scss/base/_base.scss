@@ -23,7 +23,7 @@ main {
 	display:grid;
 	grid-template-areas: 
 		"header"
-		"hero"
+		"hero" 
 		"sectionpreview"
 		"locationgrid"
 		"textcircle"
@@ -31,9 +31,5 @@ main {
 
 
 
-}
-.History {
-	display: grid;
-	grid-template-columns: 100px auto ;
-			  
+
 }

@@ -370,11 +370,6 @@ main {
   grid-template-areas: "header" "hero" "sectionpreview" "locationgrid" "textcircle" "testimonials";
 }
 
-.History {
-  display: grid;
-  grid-template-columns: 100px auto;
-}
-
 /* =============
     Typography
 ============= */
