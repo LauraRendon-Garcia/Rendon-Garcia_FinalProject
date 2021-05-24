@@ -1,12 +1,26 @@
 .container {
-    display: grid;
-    grid-gap: 7px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40px 40px;
+    display:column;
+    grid-template-columns: repeat(1fr 1fr)
+    //justify-content: center;
+    grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7"
+    "img2"
+    ;
+
+    .img1{
+        grid-area: img1;
+        background:tan
+    }
+    .img2{
+        grid-area: img2;
+        background:whitesmoke
+    }
+
 }
 
-.container > div {
-    height: autopx;
-    background: tan
-}
-    
