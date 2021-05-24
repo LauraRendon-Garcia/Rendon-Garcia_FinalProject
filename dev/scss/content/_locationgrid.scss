@@ -5,10 +5,8 @@
     grid-template-rows: 40px 40px;
 }
 
-.column{
+.container > div {
+    height: autopx;
+    background: tan
+}
     
-}
-.img3.png {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
