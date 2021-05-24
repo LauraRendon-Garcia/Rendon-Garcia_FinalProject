@@ -3,14 +3,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8,auto);
     grid-template-areas: 
-    "hist about"
-    "hist about"
-    "culture about2"
-    "culture about2"
-    "Food about3"
-    "Food about3"
-    "Visit about4"
-    "Visit about4"
+        "hist about"
+        "hist about"
+        "culture about2"
+        "culture about2"
+        "Food about3"
+        "Food about3"
+        "Visit about4"
+        "Visit about4"
     ;
     #hist{
         grid-area: hist;
