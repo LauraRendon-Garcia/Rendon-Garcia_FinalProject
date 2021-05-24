@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 40px;
+}
+
+.column{
+    
+}
+.img3.png {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
