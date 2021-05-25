@@ -529,6 +529,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/design\/homeworkDemo.sketch" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/homeworkDemo.sketch",
+      "oF" : 0
+    },
     "\/dev\/content\/_backtotop.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -767,6 +775,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/scss\/content\/hero.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/content\/hero-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/dev\/scss\/content\/hero.scss" : {
       "aP" : 0,
