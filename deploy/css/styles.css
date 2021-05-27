@@ -428,3 +428,8 @@ p {
   grid-area: about4;
   background: green;
 }
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
