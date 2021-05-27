@@ -1,4 +1,4 @@
-.sectionpreview {
+.sectionpreview algin=center {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8,auto);
@@ -14,37 +14,37 @@
     ;
     #hist{
         grid-area: hist;
-        background: blue;
+        background: tan;
     }
     #about{
         grid-area: about;
-        background: green;
+        background: tan;
     }
     #Culture{
         grid-area: culture;
-        background: pink;
+        background: tan;
 
     }
     #About2{
         grid-area: about2;
-        background: purple;
+        background: tan;
     }
 
     #Food{
         grid-area: Food;
-        background: orange;
+        background: tan;
     }
     #About3{
         grid-area: about3;
-        background: pink;
+        background: tan;
     }
     #Visit{
         grid-area: visit;
-        background: red;
+        background: tan;
     }
     #about4{
         grid-area: about4;
-        background: green;
+        background: tan;
     }
 
 

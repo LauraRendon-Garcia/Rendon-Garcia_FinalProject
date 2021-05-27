@@ -398,38 +398,47 @@ p {
 }
 .sectionpreview #hist {
   grid-area: hist;
-  background: blue;
+  background: tan;
 }
 .sectionpreview #about {
   grid-area: about;
-  background: green;
+  background: tan;
 }
 .sectionpreview #Culture {
   grid-area: culture;
-  background: pink;
+  background: tan;
 }
 .sectionpreview #About2 {
   grid-area: about2;
-  background: purple;
+  background: tan;
 }
 .sectionpreview #Food {
   grid-area: Food;
-  background: orange;
+  background: tan;
 }
 .sectionpreview #About3 {
   grid-area: about3;
-  background: pink;
+  background: tan;
 }
 .sectionpreview #Visit {
   grid-area: visit;
-  background: red;
+  background: tan;
 }
 .sectionpreview #about4 {
   grid-area: about4;
-  background: green;
+  background: tan;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.textcircle {
+  grid-template-areas: "adulthead" "adultbottom" "familieshead" "familybottom";
+}
+
+#adulthead {
+  grid-area: adulthead;
+  background: tan;
 }

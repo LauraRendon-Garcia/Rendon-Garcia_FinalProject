@@ -1,0 +1,12 @@
+.textcircle {
+    grid-template-areas: 
+        "adulthead"
+        "adultbottom"
+        "familieshead"
+        "familybottom"
+}
+;
+#adulthead{
+    grid-area: adulthead;
+    background: tan;
+}
