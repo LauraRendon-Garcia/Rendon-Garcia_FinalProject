@@ -3,21 +3,14 @@
     grid-gap: 7px;
     grid-template-columns: repeat (2,1fr);
     grid-template-areas:
-    "img1"
-    "img2"
+    "column"
     "img3"
-    "img4"
-    "img5"
     "img6"
-    "img7"
-    "img2"
     ;
 
-    .column {
-        float:center;
-        width: 50%;
-    }
-
-#img1{
-    grid-area: img1;
+#column{
+    grid-area: column;
     background: tan;
+}
+
+

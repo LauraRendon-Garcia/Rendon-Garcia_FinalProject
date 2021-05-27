@@ -1,12 +1,19 @@
 .textcircle {
+    display:grid;
+    grid-template-columns: 1fr;  
     grid-template-areas: 
         "adulthead"
         "adultbottom"
         "familieshead"
         "familybottom"
-}
 ;
+}
 #adulthead{
     grid-area: adulthead;
+    background: tan;
+}
+
+#adultbottom{
+    grid-area: adulthead
     background: tan;
 }

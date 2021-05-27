@@ -435,6 +435,8 @@ p {
 }
 
 .textcircle {
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas: "adulthead" "adultbottom" "familieshead" "familybottom";
 }
 
