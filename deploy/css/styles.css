@@ -2,6 +2,8 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
 html {
   font-size: 100%;
 }
@@ -391,10 +393,15 @@ p {
 }
 
 .sectionpreview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(10, auto);
-  grid-template-areas: "hist about" "hist about" "culture about2" "culture about2" "Food about3" "Food about3" "Visit about4" "Visit about4";
+  background: tan;
+}
+@media (min-width: 768px) {
+  .sectionpreview {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "hist about" "culturewords" "hist about" "culture about2" "culture about2" "Food about3" "Food about3" "Visit about4" "Visit about4";
+  }
 }
 .sectionpreview #hist {
   grid-area: hist;
@@ -402,6 +409,10 @@ p {
 }
 .sectionpreview #about {
   grid-area: about;
+  background: tan;
+}
+.sectionpreview #CultureWords {
+  grid-area: cult;
   background: tan;
 }
 .sectionpreview #Culture {
@@ -429,9 +440,25 @@ p {
   background: tan;
 }
 
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Lusitana", serif;
+}
+
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Lusitana", serif;
 }
 
 .textcircle {
@@ -442,5 +469,9 @@ p {
 
 #adulthead {
   grid-area: adulthead;
+  background: tan;
+}
+
+#circle {
   background: tan;
 }
