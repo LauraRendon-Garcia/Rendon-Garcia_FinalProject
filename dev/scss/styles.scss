@@ -8,3 +8,10 @@
 @import "base/_normalize";
 @import "base/_base";
 @import "base/_typography";
+@import "content/_sectionpreview";
+@import "content/testimonials.scss";
+@import "content/textcircle.scss";
+
+//Google Fonts Imports
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');

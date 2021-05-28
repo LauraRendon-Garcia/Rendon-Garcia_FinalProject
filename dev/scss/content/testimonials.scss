@@ -1,0 +1,13 @@
+.testimonials{
+    
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-family: 'Lusitana', serif;
+}

@@ -6,11 +6,27 @@ figure {
 	padding: 0;
 }
 
+
 ul {
 	margin: 0;
 	padding: 0;
 
+	
+
 	li {
 		list-style: none;
 	}
+
+
+}
+main {
+	display:grid;
+	grid-template-areas: 
+		"header"
+		"hero" 
+		"hero-2"
+		"sectionpreview"
+		"locationgrid"
+		"textcircle"
+		"testimonials"
 }

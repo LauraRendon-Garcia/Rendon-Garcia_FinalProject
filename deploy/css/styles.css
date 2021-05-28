@@ -2,6 +2,8 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
 html {
   font-size: 100%;
 }
@@ -365,6 +367,11 @@ ul li {
   list-style: none;
 }
 
+main {
+  display: grid;
+  grid-template-areas: "header" "hero" "hero-2" "sectionpreview" "locationgrid" "textcircle" "testimonials";
+}
+
 /* =============
     Typography
 ============= */
@@ -383,4 +390,88 @@ p {
 
 .section-title {
   font-weight: 300;
+}
+
+.sectionpreview {
+  background: tan;
+}
+@media (min-width: 768px) {
+  .sectionpreview {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "hist about" "culturewords" "hist about" "culture about2" "culture about2" "Food about3" "Food about3" "Visit about4" "Visit about4";
+  }
+}
+.sectionpreview #hist {
+  grid-area: hist;
+  background: tan;
+}
+.sectionpreview #about {
+  grid-area: about;
+  background: tan;
+}
+.sectionpreview #CultureWords {
+  grid-area: cult;
+  background: tan;
+}
+.sectionpreview #Culture {
+  grid-area: culture;
+  background: tan;
+}
+.sectionpreview #About2 {
+  grid-area: about2;
+  background: tan;
+}
+.sectionpreview #Food {
+  grid-area: Food;
+  background: tan;
+}
+.sectionpreview #About3 {
+  grid-area: about3;
+  background: tan;
+}
+.sectionpreview #Visit {
+  grid-area: visit;
+  background: tan;
+}
+.sectionpreview #about4 {
+  grid-area: about4;
+  background: tan;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Lusitana", serif;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Lusitana", serif;
+}
+
+.textcircle {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "adulthead" "adultbottom" "familieshead" "familybottom";
+}
+
+#adulthead {
+  grid-area: adulthead;
+  background: tan;
+}
+
+#circle {
+  background: tan;
 }

@@ -1,0 +1,68 @@
+.sectionpreview { 
+    @include md {
+
+        display:grid;
+        grid-template-columns: 1fr;
+    grid-template-rows: repeat(10,auto);
+    grid-template-areas: 
+        "hist about"
+        "culturewords"
+        "hist about"
+        "culture about2"
+        "culture about2"
+        "Food about3"
+        "Food about3"
+        "Visit about4"
+        "Visit about4";
+    }
+    background: tan;
+    #hist{
+        grid-area: hist;
+        background: tan;
+    }
+    #about{
+        grid-area: about;
+        background: tan;
+    }
+
+    #CultureWords{
+        grid-area: cult;
+        background: tan;
+    }
+    #Culture{
+        grid-area: culture;
+        background: tan;
+
+    }
+    #About2{
+        grid-area: about2;
+        background: tan;
+    }
+
+    #Food{
+        grid-area: Food;
+        background: tan;
+    }
+    #About3{
+        grid-area: about3;
+        background: tan;
+    }
+    #Visit{
+        grid-area: visit;
+        background: tan;
+    }
+    #about4{
+        grid-area: about4;
+        background: tan;
+    }
+
+
+} 
+
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-family: 'Lusitana', serif;
+}
