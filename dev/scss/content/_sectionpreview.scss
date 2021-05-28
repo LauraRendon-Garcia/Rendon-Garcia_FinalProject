@@ -1,9 +1,10 @@
 .sectionpreview  {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8,auto);
+    grid-template-rows: repeat(10,auto);
     grid-template-areas: 
         "hist about"
+        "culturewords"
         "hist about"
         "culture about2"
         "culture about2"
@@ -18,6 +19,11 @@
     }
     #about{
         grid-area: about;
+        background: tan;
+    }
+
+    #CultureWords
+        grid-area: cult;
         background: tan;
     }
     #Culture{
