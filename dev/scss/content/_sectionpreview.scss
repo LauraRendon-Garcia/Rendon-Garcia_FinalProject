@@ -1,61 +1,72 @@
 .sectionpreview { 
     @include md {
-
         display:grid;
         grid-template-columns: 1fr;
-    grid-template-rows: repeat(10,auto);
-    grid-template-areas: 
-        "hist about"
-        "culturewords"
-        "hist about"
-        "culture about2"
-        "culture about2"
-        "Food about3"
-        "Food about3"
-        "Visit about4"
-        "Visit about4";
+        grid-template-rows: repeat(10,auto);
+        grid-template-areas: 
+        "hist"
+        "hist"
+        "culture"
+        "culture"
+        "Food"
+        "Food"
+        "Visit"
+        "Visit";
     }
-    background: tan;
+    background: #F5D2B5;
     #hist{
         grid-area: hist;
-        background: tan;
     }
     #about{
         grid-area: about;
-        background: tan;
     }
 
     #CultureWords{
         grid-area: cult;
-        background: tan;
     }
     #Culture{
         grid-area: culture;
-        background: tan;
 
     }
     #About2{
         grid-area: about2;
-        background: tan;
     }
 
     #Food{
         grid-area: Food;
-        background: tan;
     }
     #About3{
         grid-area: about3;
-        background: tan;
     }
     #Visit{
         grid-area: visit;
-        background: tan;
     }
     #about4{
         grid-area: about4;
-        background: tan;
     }
 
+    h2{
+        text-align: center;
+        background-color:#B5E1F5;
+        margin-top: 50px;
+    }
+    p {
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        line-height: 2;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #spacer {
+        margin-top: 50px;
+    }
 
 } 
 

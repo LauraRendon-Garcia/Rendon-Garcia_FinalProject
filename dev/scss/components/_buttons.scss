@@ -1,7 +1,20 @@
 /* =============
     Buttons
 ============= */
-.backtotop {
-    width:216px;
-    height:71px;
+.Button {
+    height: 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.fancyButton {
+    position: absolute;
+    background-color: #454545; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    left: 40%
 }

@@ -1,7 +1,21 @@
-.testimonials{
-    
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+#Testimonials{
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        line-height: 2;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 h1{

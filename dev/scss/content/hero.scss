@@ -1,23 +1,38 @@
-.hero {
+#hero {
     height: 200%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    p {
+      text-align: center;
+      margin-right: 15px;
+      margin-left: 15px;
+      line-height: 2.6;
+    }
+    .pic1 {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .pic2{
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .top-right {
+      position: absolute;
+      top: 50px;
+      right: 16px;
+      width: 300px;
+      text-align: right;
+    }
+  
 }
 
-.pic1 {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
 
+  
+  
 
 
 
