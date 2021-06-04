@@ -393,51 +393,63 @@ p {
 }
 
 .sectionpreview {
-  background: tan;
+  background: #F5D2B5;
 }
 @media (min-width: 768px) {
   .sectionpreview {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, auto);
-    grid-template-areas: "hist about" "culturewords" "hist about" "culture about2" "culture about2" "Food about3" "Food about3" "Visit about4" "Visit about4";
+    grid-template-areas: "hist" "hist" "culture" "culture" "Food" "Food" "Visit" "Visit";
   }
 }
 .sectionpreview #hist {
   grid-area: hist;
-  background: tan;
 }
 .sectionpreview #about {
   grid-area: about;
-  background: tan;
 }
 .sectionpreview #CultureWords {
   grid-area: cult;
-  background: tan;
 }
 .sectionpreview #Culture {
   grid-area: culture;
-  background: tan;
 }
 .sectionpreview #About2 {
   grid-area: about2;
-  background: tan;
 }
 .sectionpreview #Food {
   grid-area: Food;
-  background: tan;
 }
 .sectionpreview #About3 {
   grid-area: about3;
-  background: tan;
 }
 .sectionpreview #Visit {
   grid-area: visit;
-  background: tan;
 }
 .sectionpreview #about4 {
   grid-area: about4;
-  background: tan;
+}
+.sectionpreview h2 {
+  text-align: center;
+  background-color: #B5E1F5;
+  margin-top: 50px;
+}
+.sectionpreview p {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  line-height: 2;
+}
+.sectionpreview img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.sectionpreview #spacer {
+  margin-top: 50px;
 }
 
 h2 {
@@ -448,9 +460,22 @@ p {
   font-family: "Lusitana", serif;
 }
 
-.testimonials {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+#Testimonials img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#Testimonials p {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 2;
+}
+#Testimonials h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -461,17 +486,306 @@ p {
   font-family: "Lusitana", serif;
 }
 
-.textcircle {
+.circle {
+  background-color: tan;
+}
+.circle p {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 2;
+}
+.circle h1 {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.circle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .circle {
+    display: grid;
+    grid-template-areas: 1fr;
+    grid-template-areas: ". topSection. " ". topImage . " "familyLeft familyLeft familyRight" ". familiesHead ." "familyBottom familyBottom familyBottom";
+  }
+
+  .familyLeft {
+    grid-area: familyLeft;
+  }
+
+  .familyRight {
+    grid-area: familyRight;
+  }
+
+  .topImage {
+    grid-area: topImage;
+  }
+
+  .topSection {
+    grid-area: topSection;
+  }
+
+  .familieshead {
+    grid-area: familiesHead;
+  }
+
+  .familybottom {
+    grid-area: familyBottom;
+  }
+}
+#hero {
+  height: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+#hero p {
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  line-height: 2.6;
+}
+#hero .pic1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#hero .pic2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#hero .top-right {
+  position: absolute;
+  top: 50px;
+  right: 16px;
+  width: 300px;
+  text-align: right;
+}
+
+#Location {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "adulthead" "adultbottom" "familieshead" "familybottom";
+  grid-gap: 7px;
+  grid-template-columns: repeat 2, 1fr;
+  grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+}
+#Location #img1 {
+  grid-area: img1;
+}
+#Location #img2 {
+  grid-area: img2;
+}
+#Location #img3 {
+  grid-area: img3;
+}
+#Location #img4 {
+  grid-area: img4;
+}
+#Location #img5 {
+  grid-area: img5;
+}
+#Location #img6 {
+  grid-area: img6;
+}
+#Location img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
 }
 
-#adulthead {
-  grid-area: adulthead;
-  background: tan;
+@media screen and (min-width: 600px) {
+  #Location {
+    display: grid;
+    grid-template-areas: 1fr;
+    grid-template-areas: ". img1 img2 ." ". img3 img3 ." ". img4 img5 ." ". img6 img6 .";
+    row-gap: 2ch;
+    column-gap: 2rem;
+  }
+
+  .familyLeft {
+    grid-area: familyLeft;
+  }
+
+  .familyRight {
+    grid-area: familyRight;
+  }
+
+  .topImage {
+    grid-area: topImage;
+  }
+
+  .topSection {
+    grid-area: topSection;
+  }
+}
+/* =============
+    Buttons
+============= */
+.Button {
+  height: 45px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-#circle {
-  background: tan;
+.fancyButton {
+  position: absolute;
+  background-color: #454545;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  left: 40%;
+}
+
+/* =============
+    Footer
+============= */
+#footer {
+  position: relative;
+  background-color: #F5D2B5;
+}
+#footer #floatLeft {
+  float: left;
+  margin-left: 10%;
+}
+#footer #floatRight {
+  float: right;
+  margin-right: 10%;
+}
+#footer #center {
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* =============
+    Navigation
+============= */
+#nav-container {
+  background-color: #B5E1F5;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 58px;
+  left: 0;
+}
+#nav-container .nav-btns {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px 5px;
+  width: 100%;
+  border-bottom: 2px solid transparent;
+}
+#nav-container .nav-btns:hover {
+  border-bottom: 2px solid gray;
+}
+#nav-container .nav-btns:active {
+  background: orange;
+}
+#nav-container ul li {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #nav-container {
+    background-color: none;
+    display: block !important;
+    position: unset;
+    width: auto;
+  }
+  #nav-container .nav-btns {
+    color: gray;
+  }
+  #nav-container ul {
+    display: flex;
+    align-items: center;
+  }
+  #nav-container ul li {
+    margin: 0 20px;
+  }
+}
+
+/* =============
+    Header
+============= */
+header {
+  background: #B5E1F5;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .desktop-logo {
+  display: none;
+}
+@media (min-width: 1024px) {
+  header .desktop-logo {
+    display: inline-block;
+  }
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > div #button-container {
+  padding: 10px;
+  text-align: right;
+}
+header > div #button-container button {
+  background-color: orange;
+  border-radius: 23px;
+  color: #000;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  transition: 0.25s;
+}
+header > div #button-container button:hover {
+  background-color: #000;
+  color: #fff;
+}
+header > div #burger-container {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+@media (min-width: 1024px) {
+  header > div #burger-container {
+    display: none !important;
+  }
+}
+header > div #burger-container i {
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header .mobile-logo {
+    display: none;
+  }
 }

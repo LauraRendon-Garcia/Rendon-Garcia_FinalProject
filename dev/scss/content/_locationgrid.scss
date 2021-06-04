@@ -9,8 +9,7 @@
     "img3"
     "img4"
     "img5"
-    "img6"
-    ;
+    "img6";
 
     #img1 {
         grid-area: img1;
@@ -29,5 +28,36 @@
     }
     #img6 {
         grid-area: img6;
+    }
+    img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #Location {
+        display: grid;
+        grid-template-areas: 1fr;
+        grid-template-areas:
+        ". img1 img2 ."
+        ". img3 img3 ."
+        ". img4 img5 ."
+        ". img6 img6 .";
+        row-gap: 2ch;
+        column-gap: 2rem;
+    }
+    .familyLeft {
+        grid-area: familyLeft;
+    }
+    .familyRight {
+        grid-area: familyRight;
+    }
+    .topImage {
+        grid-area: topImage;
+    }
+    .topSection {
+        grid-area: topSection;
     }
 }

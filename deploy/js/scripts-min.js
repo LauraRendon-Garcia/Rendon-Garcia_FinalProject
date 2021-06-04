@@ -1,1 +1,1 @@
-!function(){"use strict";$("body").css("background","grey")}();
+!function(n){"use strict";function t(n){return n&&"object"==typeof n&&"default"in n?n:{default:n}}var o=t(n);let e=o.default("nav[data-nav]"),c=!1;console.log("working"),o.default(".nav-btns").on("click",(function(){console.log("click"),!1===c?(e.show(),c=!0):(e.hide(),c=!1)}))}($);
