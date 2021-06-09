@@ -12,16 +12,60 @@
         text-align: center;
         line-height: 2;
     }
-    h1 {
-        text-align: center;
-        margin-bottom: 20px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        div img {
+            float: left;
+        }
+        div p {
+            height: 100%;
+            display: flex;
+            align-items:center;
+            padding-left: 50px;
+            text-align: left;
+            width: 40%;
+        }
+        .noChange {
+            width: 90%;
+            text-align: center;
+            padding-left: 0px;
+
+        }
     }
-}
+    
+    
+    grid-template-columns: repeat (2,1fr);
+    display: grid;
+    grid-template-areas:
+        "intro"
+        "firstThing"
+        "secondThing"
+        "thirdThing"
+        "t4"
+        "t5";
 
-h1{
-    font-family: 'Raleway', sans-serif;
-}
-
-p{
-    font-family: 'Lusitana', serif;
-}
+    @media only screen and (min-width : 1024px) {
+        grid-template-areas:
+    "intro intro intro"
+    "firstThing secondThing thirdThing"
+    "t4 . t5";
+    }
+    #t1 {
+        grid-area: firstThing;
+    }
+    #t2 {
+        grid-area: secondThing;
+    }
+    #t3 {
+        grid-area: thirdThing;
+    }
+    #t4 {
+        grid-area: t4;
+    }
+    #t5 {
+        grid-area: t5;
+    }
+    #intro {
+        grid-area: intro;
+    }
+};

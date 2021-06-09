@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1299px) {
     #Location {
         display: grid;
         grid-template-areas: 1fr;
@@ -47,6 +47,34 @@
         ". img6 img6 .";
         row-gap: 2ch;
         column-gap: 2rem;
+    }
+    .familyLeft {
+        grid-area: familyLeft;
+    }
+    .familyRight {
+        grid-area: familyRight;
+    }
+    .topImage {
+        grid-area: topImage;
+    }
+    .topSection {
+        grid-area: topSection;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #Location {
+        display: grid;
+        grid-template-areas: 1fr;
+        grid-template-areas:
+        ". img1 img2 ."
+        ". img3 img3 ."
+        ". img4 img5 ."
+        ". img6 img6 .";
+        row-gap: 2ch;
+        column-gap: 2rem;
+        width: 75%;
+        margin-left: 10%;
     }
     .familyLeft {
         grid-area: familyLeft;

@@ -1,15 +1,3 @@
-// .circle {
-//     background-color: #F5D2B5;
-//     display:grid;
-//     grid-template-columns: 1fr;  
-//     grid-template-areas: 
-//         "adulthead"
-//         "adultbottom"
-//         "familieshead"
-//         "familybottom";
-// }
-
-
 .circle {
     background-color: tan;
     
@@ -33,33 +21,29 @@
     } 
 }
 
-@media screen and (min-width: 600px) {
-    .circle {
-        display: grid;
-        grid-template-areas: 1fr;
-        grid-template-areas:
-        ". topSection. "
-        ". topImage . " 
-            "familyLeft familyLeft familyRight"
-            ". familiesHead ."
-            "familyBottom familyBottom familyBottom";
+@media screen and (min-width: 768px) {
+    img {
+        width: 250px;
     }
-    .familyLeft {
-        grid-area: familyLeft;
+    p {
+        width: 75%;
     }
-    .familyRight {
-        grid-area: familyRight;
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    .familyLeft, .familyRight {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
     }
-    .topImage {
-        grid-area: topImage;
-    }
-    .topSection {
-        grid-area: topSection;
-    }
-    .familieshead {
-        grid-area: familiesHead;
-    }
-    .familybottom {
-        grid-area: familyBottom;
+    .adultsLeft, .adultsRight {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
     }
 }

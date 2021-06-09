@@ -372,6 +372,18 @@ main {
   grid-template-areas: "header" "hero" "hero-2" "sectionpreview" "locationgrid" "textcircle" "testimonials";
 }
 
+section {
+  padding-top: 40px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Lusitana", serif;
+}
+
 /* =============
     Typography
 ============= */
@@ -451,6 +463,27 @@ p {
 .sectionpreview #spacer {
   margin-top: 50px;
 }
+@media only screen and (min-width: 768px) {
+  .sectionpreview div img {
+    float: left;
+    z-index: 5;
+  }
+  .sectionpreview div p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 40%;
+  }
+  .sectionpreview h2 {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    text-align: right;
+    direction: rtl;
+    text-indent: 10%;
+  }
+}
 
 h2 {
   font-family: "Raleway", sans-serif;
@@ -460,6 +493,11 @@ p {
   font-family: "Lusitana", serif;
 }
 
+#Testimonials {
+  grid-template-columns: repeat 2, 1fr;
+  display: grid;
+  grid-template-areas: "intro" "firstThing" "secondThing" "thirdThing" "t4" "t5";
+}
 #Testimonials img {
   display: block;
   margin-left: auto;
@@ -473,17 +511,46 @@ p {
   text-align: center;
   line-height: 2;
 }
-#Testimonials h1 {
-  text-align: center;
-  margin-bottom: 20px;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #Testimonials div img {
+    float: left;
+  }
+  #Testimonials div p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    text-align: left;
+    width: 40%;
+  }
+  #Testimonials .noChange {
+    width: 90%;
+    text-align: center;
+    padding-left: 0px;
+  }
 }
-
-h1 {
-  font-family: "Raleway", sans-serif;
+@media only screen and (min-width: 1024px) {
+  #Testimonials {
+    grid-template-areas: "intro intro intro" "firstThing secondThing thirdThing" "t4 . t5";
+  }
 }
-
-p {
-  font-family: "Lusitana", serif;
+#Testimonials #t1 {
+  grid-area: firstThing;
+}
+#Testimonials #t2 {
+  grid-area: secondThing;
+}
+#Testimonials #t3 {
+  grid-area: thirdThing;
+}
+#Testimonials #t4 {
+  grid-area: t4;
+}
+#Testimonials #t5 {
+  grid-area: t5;
+}
+#Testimonials #intro {
+  grid-area: intro;
 }
 
 .circle {
@@ -508,35 +575,34 @@ p {
   margin-bottom: 25px;
 }
 
-@media screen and (min-width: 600px) {
-  .circle {
-    display: grid;
-    grid-template-areas: 1fr;
-    grid-template-areas: ". topSection. " ". topImage . " "familyLeft familyLeft familyRight" ". familiesHead ." "familyBottom familyBottom familyBottom";
+@media screen and (min-width: 768px) {
+  img {
+    width: 250px;
   }
 
-  .familyLeft {
-    grid-area: familyLeft;
+  p {
+    width: 75%;
   }
 
-  .familyRight {
-    grid-area: familyRight;
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
-  .topImage {
-    grid-area: topImage;
+  .familyLeft, .familyRight {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
   }
 
-  .topSection {
-    grid-area: topSection;
-  }
-
-  .familieshead {
-    grid-area: familiesHead;
-  }
-
-  .familybottom {
-    grid-area: familyBottom;
+  .adultsLeft, .adultsRight {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
   }
 }
 #hero {
@@ -602,13 +668,40 @@ p {
   object-fit: cover;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1299px) {
   #Location {
     display: grid;
     grid-template-areas: 1fr;
     grid-template-areas: ". img1 img2 ." ". img3 img3 ." ". img4 img5 ." ". img6 img6 .";
     row-gap: 2ch;
     column-gap: 2rem;
+  }
+
+  .familyLeft {
+    grid-area: familyLeft;
+  }
+
+  .familyRight {
+    grid-area: familyRight;
+  }
+
+  .topImage {
+    grid-area: topImage;
+  }
+
+  .topSection {
+    grid-area: topSection;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #Location {
+    display: grid;
+    grid-template-areas: 1fr;
+    grid-template-areas: ". img1 img2 ." ". img3 img3 ." ". img4 img5 ." ". img6 img6 .";
+    row-gap: 2ch;
+    column-gap: 2rem;
+    width: 75%;
+    margin-left: 10%;
   }
 
   .familyLeft {
